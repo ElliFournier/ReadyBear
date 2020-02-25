@@ -40,11 +40,13 @@
         <con:jmsPropertyConfig/>
         <con:parameters>
           <con:entry key="password" value="Login123"/>
+          <con:entry key="id" value=""/>
           <con:entry key="username" value="Login"/>
         </con:parameters>
         <con:parameterOrder>
           <con:entry>username</con:entry>
           <con:entry>password</con:entry>
+          <con:entry>id</con:entry>
         </con:parameterOrder>
       </con:restRequest>
     </con:config>

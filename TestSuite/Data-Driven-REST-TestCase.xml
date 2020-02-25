@@ -75,11 +75,13 @@
         <con:jmsPropertyConfig/>
         <con:parameters>
           <con:entry key="password" value="${DataSource#password}"/>
+          <con:entry key="id" value=""/>
           <con:entry key="username" value="${DataSource#username}"/>
         </con:parameters>
         <con:parameterOrder>
           <con:entry>username</con:entry>
           <con:entry>password</con:entry>
+          <con:entry>id</con:entry>
         </con:parameterOrder>
       </con:restRequest>
     </con:config>

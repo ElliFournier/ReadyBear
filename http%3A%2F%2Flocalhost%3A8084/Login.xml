@@ -23,7 +23,14 @@
   </con:parameters>
   <con:method name="Login" id="9ea60d1b-c865-4e88-a64c-9277fe9f49c8" method="POST">
     <con:settings/>
-    <con:parameters/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>id</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+      </con:parameter>
+    </con:parameters>
     <con:representation type="RESPONSE">
       <con:mediaType xsi:nil="true"/>
       <con:status>0</con:status>
@@ -168,11 +175,13 @@
       <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
       <con:parameters>
         <con:entry key="password" value="Login123"/>
+        <con:entry key="id" value="123"/>
         <con:entry key="username" value="Login"/>
       </con:parameters>
       <con:parameterOrder>
         <con:entry>username</con:entry>
         <con:entry>password</con:entry>
+        <con:entry>id</con:entry>
       </con:parameterOrder>
     </con:request>
   </con:method>
