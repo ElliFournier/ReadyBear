@@ -26,4 +26,9 @@
   <con:tearDownScript/>
   <con:reportScript/>
   <con:reportParameters/>
+  <con:environmentSpec>
+    <con:entry environmentId="180649cd-a3a3-4186-9913-db6bca876129">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
 </con:testSuite>

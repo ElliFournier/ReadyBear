@@ -27,5 +27,15 @@
     <con:jmsPropertyConfig/>
     <con:wsaConfig mustUnderstand="NONE" version="200508"/>
     <con:wsrmConfig version="1.2"/>
+    <con:environmentSpec>
+      <con:entry environmentId="180649cd-a3a3-4186-9913-db6bca876129">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
   </con:call>
+  <con:environmentSpec>
+    <con:entry environmentId="180649cd-a3a3-4186-9913-db6bca876129">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
 </con:operation>

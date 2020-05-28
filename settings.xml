@@ -21,7 +21,15 @@
     </con:property>
   </con:properties>
   <con:wssContainer/>
-  <con:databaseConnectionContainer/>
+  <con:databaseConnectionContainer>
+    <con:databaseConnection>
+      <con:name>test</con:name>
+      <con:driver/>
+      <con:connectionString xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+      <con:password/>
+      <con:connectionProperties/>
+    </con:databaseConnection>
+  </con:databaseConnectionContainer>
   <con:jmsConnectionContainer/>
   <con:oAuth2ProfileContainer/>
   <con:oAuth1ProfileContainer/>
@@ -31,6 +39,33 @@
     <con:script>log.info(request.getEndpoint())</con:script>
   </con:eventHandlers>
   <con:sensitiveInformation/>
+  <con:environment id="180649cd-a3a3-4186-9913-db6bca876129" name="hi">
+    <con:service type="SOAP" name="ServiceSoapBinding">
+      <con:endpoint authProfile="No Authorization"/>
+    </con:service>
+    <con:service type="REST" name="http://localhost:8084">
+      <con:endpoint authProfile="No Authorization"/>
+    </con:service>
+    <con:property>
+      <con:name>Some Property</con:name>
+      <con:value/>
+    </con:property>
+    <con:databaseConnectionContainer>
+      <con:databaseConnection>
+        <con:name>test</con:name>
+        <con:driver xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <con:connectionString xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <con:password/>
+        <con:connectionProperties/>
+      </con:databaseConnection>
+    </con:databaseConnectionContainer>
+    <con:jmsConnectionContainer/>
+  </con:environment>
   <con:authRepository/>
+  <con:environmentSpec>
+    <con:entry environmentId="180649cd-a3a3-4186-9913-db6bca876129">
+      <con:authProfile>No Authorization</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
   <con:tags/>
 </con:soapui-project>

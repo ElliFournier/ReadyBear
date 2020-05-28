@@ -41,7 +41,7 @@
   </con:testStep>
   <con:testStep type="restrequest" name="Login test step" id="e9fd58a8-9f8e-4165-aefe-453196b8a0e3">
     <con:settings/>
-    <con:config service="http://localhost:8084" resourcePath="/login" methodName="Login" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:config service="http://localhost:8084" resourcePath="/login{password}" methodName="Login" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       <con:restRequest name="Login test step" id="f0635073-e001-43aa-9998-b56c4836b1b1" mediaType="application/json" postQueryString="false">
         <con:settings>
           <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
@@ -83,6 +83,11 @@
           <con:entry>password</con:entry>
           <con:entry>id</con:entry>
         </con:parameterOrder>
+        <con:environmentSpec>
+          <con:entry environmentId="180649cd-a3a3-4186-9913-db6bca876129">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
       </con:restRequest>
     </con:config>
   </con:testStep>
@@ -123,6 +128,11 @@
           <con:entry key="sessionid" value="${Login test step#Response#$.sessionid}"/>
           <con:entry key="searchstring" value="Item 1"/>
         </con:parameters>
+        <con:environmentSpec>
+          <con:entry environmentId="180649cd-a3a3-4186-9913-db6bca876129">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
       </con:restRequest>
     </con:config>
   </con:testStep>
@@ -163,6 +173,11 @@
           <con:entry key="sessionid" value="${Login test step#Response#$.sessionid}"/>
           <con:entry key="searchstring" value="Item 1"/>
         </con:parameters>
+        <con:environmentSpec>
+          <con:entry environmentId="180649cd-a3a3-4186-9913-db6bca876129">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
       </con:restRequest>
     </con:config>
   </con:testStep>
@@ -194,6 +209,11 @@
         <con:parameterOrder>
           <con:entry>sessionid</con:entry>
         </con:parameterOrder>
+        <con:environmentSpec>
+          <con:entry environmentId="180649cd-a3a3-4186-9913-db6bca876129">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
       </con:restRequest>
     </con:config>
   </con:testStep>
@@ -227,4 +247,9 @@
     <con:status>NONE</con:status>
     <con:properties/>
   </con:breakPoints>
+  <con:environmentSpec>
+    <con:entry environmentId="180649cd-a3a3-4186-9913-db6bca876129">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
 </con:testCase>
