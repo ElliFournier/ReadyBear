@@ -39,7 +39,7 @@
         <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:jmsPropertyConfig/>
         <con:parameters>
-          <con:entry key="password" value="hifgfgf"/>
+          <con:entry key="password" value="hifgf4gf"/>
           <con:entry key="username" value="Logdfdg"/>
         </con:parameters>
         <con:parameterOrder>
